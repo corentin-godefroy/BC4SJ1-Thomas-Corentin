@@ -25,7 +25,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=your_project_key \
-            -Dsonar.organization=your_organization \
-            -Dsonar.host.url=https://sonarqube.example.com \
+            -Dsonar.projectKey=red \
+            -Dsonar.host.url=https://exam.andragogy.fr/sonarqube/ \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
